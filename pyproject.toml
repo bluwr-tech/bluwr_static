@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "bluwr_static"
+version = "1.0"
+dependencies = [
+"pyyaml",
+]
+
+requires-python = ">=3.10"
+authors = [
+  {name = "Tariq Daouda"},
+]
+maintainers = [
+  {name = "Tariq Daouda"}
+]
+description = "The easiest way to build static websites"
+readme = "README.md"
+license-files = ["LICEN[CS]E.*"]
+keywords = ["database"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python"
+]
+
+[project.urls]
+Repository = "https://github.com/bluwr_tech/bluwr_static.git"
