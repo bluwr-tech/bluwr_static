@@ -3,7 +3,32 @@ The easiest way to build static websites
 
 A lightweight Python library for building static websites from reusable HTML **components**, **sections**, and **pages**. You write ordinary HTML templates, compose them with a simple `{{ }}` syntax, and generate ready-to-deploy HTML files.
 
-The library is designed to be imported as a package and used from your own Python script or application. Python packages organize modules using dotted module names, and `from package import item` imports a class, function, or submodule from a package. [docs.python](https://docs.python.org/3/tutorial/modules.html)
+The library is designed to be imported as a package and used from your own Python script or application.
+
+## When to use it
+
+This library is a good fit for:
+
+- Landing pages and marketing sites.
+- Portfolios and small business websites.
+- Documentation prototypes.
+- Design systems and HTML component libraries.
+- Projects where you want static HTML without adopting a large framework.
+- Teams that prefer HTML templates over JSX, Markdown, or a full CMS.
+
+## Comparison
+
+| Feature | This library | Jekyll / Hugo | React / Next.js |
+|---|---|---|---|
+| Authoring format | HTML and YAML-like inserts | Markdown, templates, front matter | JSX/TSX |
+| Component reuse | Built in | Template includes/partials | Components |
+| Section composition | Built in | Includes/partials | Components |
+| Output | Static HTML files | Static HTML and assets | Often JavaScript-driven pages |
+| Build complexity | Low | Low to medium | Medium to high |
+| Runtime requirements | Python at build time | Generator runtime | Node.js ecosystem |
+| Best suited for | Small custom static sites | Content-heavy sites and blogs | Interactive applications |
+
+Static-site generators commonly provide prebuilt HTML, which can reduce server-side rendering work and make caching and CDN delivery straightforward.
 
 ## Installation
 
@@ -651,28 +676,3 @@ The library relies on Python’s standard library. You do not need a Node.js too
 ### Easy to understand
 
 The rendering process is explicit: components receive variables, sections render their own inserts, and pages combine both into final HTML files.
-
-## When to use it
-
-This library is a good fit for:
-
-- Landing pages and marketing sites.
-- Portfolios and small business websites.
-- Documentation prototypes.
-- Design systems and HTML component libraries.
-- Projects where you want static HTML without adopting a large framework.
-- Teams that prefer HTML templates over JSX, Markdown, or a full CMS.
-
-## Comparison
-
-| Feature | This library | Jekyll / Hugo | React / Next.js |
-|---|---|---|---|
-| Authoring format | HTML and YAML-like inserts | Markdown, templates, front matter | JSX/TSX |
-| Component reuse | Built in | Template includes/partials | Components |
-| Section composition | Built in | Includes/partials | Components |
-| Output | Static HTML files | Static HTML and assets | Often JavaScript-driven pages |
-| Build complexity | Low | Low to medium | Medium to high |
-| Runtime requirements | Python at build time | Generator runtime | Node.js ecosystem |
-| Best suited for | Small custom static sites | Content-heavy sites and blogs | Interactive applications |
-
-Static-site generators commonly provide prebuilt HTML, which can reduce server-side rendering work and make caching and CDN delivery straightforward.
