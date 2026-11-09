@@ -18,8 +18,9 @@ This library is a good fit for:
 
 ## Comparison
 
-| Feature | This library | Jekyll / Hugo | React / Next.js |
-|---|---|---|---|
+| Feature | This library | Jekyll / Hugo / Pelican| React / Next.js |
+|---|---|---|---| ---|
+| Build time | Lightning fast | OK | OK / Long |
 | Authoring format | HTML and YAML-like inserts | Markdown, templates, front matter | JSX/TSX |
 | Component reuse | Built in | Template includes/partials | Components |
 | Section composition | Built in | Includes/partials | Components |
