@@ -3,19 +3,6 @@ The easiest way to build static websites
 
 A lightweight Python library for building static websites from reusable HTML **components**, **sections**, and **pages**. You write ordinary HTML templates, compose them with a simple `{{ }}` syntax, and generate ready-to-deploy HTML files.
 
-The library is designed to be imported as a package and used from your own Python script or application.
-
-## When to use it
-
-This library is a good fit for:
-
-- Landing pages and marketing sites.
-- Portfolios and small business websites.
-- Documentation prototypes.
-- Design systems and HTML component libraries.
-- Projects where you want static HTML without adopting a large framework.
-- Teams that prefer HTML templates over JSX, Markdown, or a full CMS.
-
 ## Comparison
 | Feature | Bluwr Static | Jekyll / Hugo | React / Next.js |
 |---|---|---|---|
@@ -28,12 +15,41 @@ This library is a good fit for:
 | Runtime requirements | Python at build time | Generator runtime | Node.js ecosystem |
 | Best suited for | Small custom static sites | Content-heavy sites and blogs | Interactive applications |
 
+## Features
+
+Bluwr Static supports:
+- Components
+- Sections
+- ⁠Nested sections
+- ⁠Pages
+- ⁠Layouts
+- ⁠Pseudo-scoped CSS and JS
+
+And:
+- It's about 200 lines of python
+- Has no boiler plate
+- No setup with questions to answer
+- No tons of JS dependencies, just pyyaml
+- Builds the result really fast
+
+## When to use it
+
+This library is a good fit for:
+
+- Landing pages and marketing sites.
+- Portfolios and small business websites.
+- Documentation prototypes.
+- Design systems and HTML component libraries.
+- Projects where you want static HTML without adopting a large framework.
+- Teams that prefer HTML templates over JSX, Markdown, or a full CMS.
+
 ## Installation
 
 Install the package with pip:
 
 ```bash
-pip install bluwr_static
+git clone git@github.com:bluwr-tech/bluwr_static.git
+cd bluwr_static
 ```
 
 Or, if you are developing locally from the repository:
