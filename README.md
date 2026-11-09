@@ -17,10 +17,9 @@ This library is a good fit for:
 - Teams that prefer HTML templates over JSX, Markdown, or a full CMS.
 
 ## Comparison
-
-| Feature | This library | Jekyll / Hugo / Pelican| React / Next.js |
-|---|---|---|---| ---|
-| Build time | Lightning fast | OK | OK / Long |
+| Feature | Bluwr Static | Jekyll / Hugo | React / Next.js |
+|---|---|---|---|
+| Build time | Lightning Fast | OK-Long | OK-Long |
 | Authoring format | HTML and YAML-like inserts | Markdown, templates, front matter | JSX/TSX |
 | Component reuse | Built in | Template includes/partials | Components |
 | Section composition | Built in | Includes/partials | Components |
@@ -28,8 +27,6 @@ This library is a good fit for:
 | Build complexity | Low | Low to medium | Medium to high |
 | Runtime requirements | Python at build time | Generator runtime | Node.js ecosystem |
 | Best suited for | Small custom static sites | Content-heavy sites and blogs | Interactive applications |
-
-Static-site generators commonly provide prebuilt HTML, which can reduce server-side rendering work and make caching and CDN delivery straightforward.
 
 ## Installation
 
