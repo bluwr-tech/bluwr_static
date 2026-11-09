@@ -318,7 +318,7 @@ Pages are the final templates. Every page file becomes one output HTML file, nam
 ### Build a page
 
 ```python
-from your_library import Builder
+from bluwr_static import Builder
 
 builder = Builder()
 
@@ -506,7 +506,7 @@ Then include it in every page:
 `build.py`
 
 ```python
-from your_library import Builder
+from bluwr_static import Builder
 
 builder = Builder()
 
@@ -528,7 +528,7 @@ python build.py
 The loader methods return the builder, so you can chain them:
 
 ```python
-from your_library import Builder
+from bluwr_static import Builder
 
 (
     Builder()
@@ -560,7 +560,7 @@ The builder creates the output directory if it does not already exist.
 ### `Builder`
 
 ```python
-from your_library import Builder
+from bluwr_static import Builder
 
 builder = Builder()
 ```
@@ -575,7 +575,7 @@ builder = Builder()
 ### `Component`
 
 ```python
-from your_library import Component
+from bluwr_static import Component
 
 button = Component("./template/components/button.html")
 
@@ -596,7 +596,7 @@ html = button.build({
 ### `Page`
 
 ```python
-from your_library import Page
+from bluwr_static import Page
 
 page = Page("./template/pages/index.html")
 
